@@ -1,0 +1,11 @@
+@mixin width($width:auto) {
+    width: $width;
+}
+
+@mixin height($height:auto) {
+    height: ($height * 10) / 10;
+}
+
+@mixin float($float:none) {
+    float: $float;
+}
