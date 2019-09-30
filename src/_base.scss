@@ -11,6 +11,16 @@ figure{
     @include width(400px);
     @include height(190px);
     @include float(left);
+    @include media(959px){
+        width:inherit;
+        height:140px;
+        float:none;
+        background-position:center;
+    }
+    @include media(459px){
+        background-size:contain;
+        height:100px;
+    }
     background:$logo no-repeat 0 50px;
     display:block;
     margin:0;
@@ -20,6 +30,15 @@ main{
     width:940px;
     margin:0 auto;
     padding:0 10px;
+    @include media(959px){
+        width:768px;
+    }
+    @include media(767px){
+        width:460px;
+    }
+    @include media(459px){
+        width:300px;
+    }
 }
 
 header{
@@ -32,12 +51,30 @@ header{
     img{
         max-width:100%;
         height:auto;
+        @include media(767px){
+            margin-bottom:100px;
+        }
+        @include media(459px){
+            margin-bottom:80px;
+        }
     }
     h1{
         color:$red;
         font-weight:100;
         font-size:4em;
         line-height:0;
+        @include media(959px){
+            font-size:3em;
+        }
+        @include media(767px){
+            font-size:2em;
+        }
+        @include media(459px){
+            &:first-child{
+                font-size:1.4em;
+                margin-bottom:20px;
+            }
+        }
     }
     h2{
         color:$white;
@@ -45,6 +82,15 @@ header{
         font-size:2.5em;
         line-height:0;
         margin-bottom:70px;
+        @include media(959px){
+            font-size:1.5em;
+        }
+        @include media(767px){
+            font-size:1em;
+        }
+        @include media(459px){
+            font-size:1.4em;
+        }
     }
     h3{
         color:$silver;
@@ -52,5 +98,19 @@ header{
         font-size:2em;
         line-height:0;
         margin-bottom:50px;
+        @include media(767px){
+            font-size:1.5em;
+        }
+        @include media(459px){
+            color:$white;
+            font-size:1em;
+        }
+    }
+}
+article{
+    img{
+        @include media(459px){
+            display:none;
+        }
     }
 }

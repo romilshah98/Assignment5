@@ -4,6 +4,9 @@
     background:$greybar-bg;
     clear:both;
     padding-top:30px;
+    @include media(459px){
+        display:none;
+    }
 }
 footer{
     @include width(100%);
@@ -13,6 +16,15 @@ footer{
     text-align:center;
     color: $white;
     padding-top:50px;
+    @include media(459px){
+        text-align:center;
+    }
+    p,img{
+        @include media(459px){
+            float:none;
+            margin:0;
+        }
+    }
 }
 .social-media{
     margin:0 auto;

@@ -3,9 +3,15 @@
 }
 
 @mixin height($height:auto) {
-    height: ($height * 10) / 10;
+    height: $height;
 }
 
 @mixin float($float:none) {
     float: $float;
+}
+
+@mixin media($width){
+    @media screen and (max-width:$width) {
+        @content;
+    }
 }
