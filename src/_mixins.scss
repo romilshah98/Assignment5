@@ -15,3 +15,7 @@
         @content;
     }
 }
+
+@mixin headermath($font){
+    font-size: $font - 1
+}

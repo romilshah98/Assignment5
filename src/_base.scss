@@ -61,13 +61,13 @@ header{
     h1{
         color:$red;
         font-weight:100;
-        font-size:4em;
+        @include headermath(5em);
         line-height:0;
         @include media(959px){
-            font-size:3em;
+            @include headermath(4em);
         }
         @include media(767px){
-            font-size:2em;
+            @include headermath(3em);
         }
         @include media(459px){
             &:first-child{
