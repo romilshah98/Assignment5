@@ -8,7 +8,6 @@ function css () {
         .pipe(dest('dist/css'))
 };
 
-// exports.default = function () {
-//     watch('src/*.scss', css);
-// };
-exports.default = css;
+exports.default = function () {
+    watch('src/*.scss', css);
+};
