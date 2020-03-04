@@ -1,6 +1,7 @@
-# Assignment5
-### Welcome to [Assingnment 5] of CS648 ###
-There is 1 page in this assingnment which is created using Sass:
-* index.html
+# SASS (SCSS) using Gulp
 
-[Assingnment 5]: https://github.com/romilshah98/Assignment5.git
+### Used Gulp to handle the compilation of SASS Script. 
+
+### Created 3 partials for Navigation, Variables and Mixins
+
+### Used Sass nested rules as well as handled Media Queries of the Web page using Mixins
